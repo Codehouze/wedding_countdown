@@ -12,7 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- Third party plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+				<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+				<link href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -20,7 +21,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://res.cloudinary.com/dfsmwu4av/image/upload/v1585049913/img/logo-removebg-preview_owhilj.png"  style="width: 150px;"/></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://res.cloudinary.com/dfsmwu4av/image/upload/v1585049913/img/logo-removebg-preview_owhilj.png"  style="width: 65px;"/></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
@@ -43,7 +44,7 @@
                     <div class="col-lg-8 align-self-baseline">
                         <h3 class="text-white-75 font-weight-light mb-5">	If we had to tell you one thing about us... it would be that we're so thankful. That God brought us together.</h3>
                         <hr class="divider my-4" />
-                        <h1 id="demo"></h1>
+                        
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                     </div>
                 </div>
@@ -55,15 +56,15 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner" id='img'>
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dfsmwu4av/image/upload/v1585049899/images/couples/gallery-5_ceztfu.jpg" alt="First slide">
+      <img class="d-block w-100 img" src="https://res.cloudinary.com/dfsmwu4av/image/upload/v1585049899/images/couples/gallery-5_ceztfu.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dfsmwu4av/image/upload/v1585049898/images/couples/gallery-3_o7w3ai.jpg" alt="Second slide">
+      <img class="d-block w-100 img" src="https://res.cloudinary.com/dfsmwu4av/image/upload/v1585049898/images/couples/gallery-3_o7w3ai.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://res.cloudinary.com/dfsmwu4av/image/upload/v1585049898/images/couples/gallery-4_ntd6ip.png" alt="Third slide">
+      <img class="d-block w-100 img" src="https://res.cloudinary.com/dfsmwu4av/image/upload/v1585049898/images/couples/gallery-4_ntd6ip.png" alt="Third slide">
         <div class="carousel-caption d-none d-md-block">
             <h5>...</h5>
              <p>...</p>
@@ -79,6 +80,54 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+  <div id="demo">
+		<div class="wow fadeInUp" data-wow-duration="2s">
+			<h1>Nwulari & Kelvin</h1>
+			<h4>Getting Married</h4>
+			<div class="the-heart-floral-txt">
+				<h3>12 April 2020</h3>
+			</div>
+		</div>
+		<div class="div">
+			<div class="timer">
+				<div class="cont">
+					<h2 class="days"></h2>
+					<h4>Days</h4>
+				</div>
+				
+			</div>
+			<div class="dot">
+				:
+			</div>
+			<div class="timer">
+				<div class="cont">
+					<h2 class="hours"></h2>
+					<h4>Hours</h4>
+				</div>
+			
+			</div>
+			<div class="dot">
+				:
+			</div>
+			<div class="timer">
+				<div class="cont">
+					<h2 class="minutes"></h2>
+				<h4>minutes</h4>
+				</div>
+				
+			</div>
+			<div class="dot">
+				:
+			</div>
+			<div class="timer">
+				<div class="cont">
+					<h2 class="seconds"></h2>
+				<h4>Seconds</h4>
+				</div>
+			</div>
+		</div>
+		
+	</div>
 </div>
         <!-- About section-->
         <section class="page-section bg-primary" id="about">
@@ -356,9 +405,10 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " " + hours + " " +
-  + minutes + " " + seconds + " " ;
-    
+  document.getElementsByClassName("days")[0].innerHTML = days;
+	document.getElementsByClassName("hours")[0].innerHTML = hours;
+	document.getElementsByClassName("minutes")[0].innerHTML = minutes;
+	document.getElementsByClassName("seconds")[0].innerHTML = seconds;
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
