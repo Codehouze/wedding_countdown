@@ -67,6 +67,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10122,4 +10123,45 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.img {
+  filter: brightness(50%) !important;
+}
+
+#demo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.timer {
+  border: 4px solid #fff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.dot {
+  font-size: 6rem;
+  margin: 0 .5rem;
+}
+.wow {
+  margin: 3rem 0;
+}
+.wow h1{
+  font-size: 5rem;
+}
+
+.cont {
+  margin: 1rem 0
 }
