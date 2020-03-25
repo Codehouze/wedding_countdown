@@ -10152,7 +10152,7 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  width: 100%;
+  width: 80%;
   /* background-color: #f4623a; */
 }
 
@@ -10161,23 +10161,36 @@ img {
   font-weight: bolder;
 }
 
+.wow h1 {
+  font-size: 3.5rem !important;
+}
+
+.wow h4 {
+  font-size: 1rem !important;
+}
+
+.wow h3 {
+  font-size: 1.5rem !important;
+}
+
 .div {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  /* width: 50%; */
 }
 
 .timer {
   border: 1px dashed #fff;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
 }
 
 .timer p {
   font-weight: bolder;
-  font-size: 1.4rem;
+  font-size: .6rem;
   color: #fff;
 }
 
@@ -10185,12 +10198,41 @@ img {
   animation: round 60s infinite forwards ease-in-out;
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 997px) {
   .timer {
     border: 3px dashed #fff;
     border-radius: 50%;
     width: 120px;
     height: 120px;
+  }
+
+  #demo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    /* background-color: #f4623a; */
+  }
+
+  .timer p {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  .wow h1 {
+    font-size: 5rem !important;
+  }
+  
+  .wow h4 {
+    font-size: 1.5rem !important;
+  }
+  
+  .wow h3 {
+    font-size: 1.75rem !important;
   }
 }
 
@@ -10209,10 +10251,7 @@ img {
 .wow {
   margin: 3rem 0;
 }
-.wow h1{
-  font-size: 5rem;
-}
 
 .cont {
-  margin: 1rem 0
+  margin: 1rem;
 }
