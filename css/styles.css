@@ -95,13 +95,23 @@ img {
 .img3 { flex: 0.7505; }
 .img4 { flex: 1.5023; }
 .img5 { flex: 0.75; }
+.our_story{
+  font-size: 20px;
+  color:white;
+}
 .couples{
   border-radius:100%;
-   font-size: 20px;
-   height: 550px;
+     height: 550px;
    padding:20px;
-   font-family: 'Source Sans Pro';
+  
    text-align:left;
+}
+.couples_text{
+  font-size: 20px;
+  padding-right:20;
+  margin-right:10px;
+ font-family: 'Source Sans Pro';
+   text-align:justify;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
