@@ -10286,3 +10286,7 @@ img {
 .cont {
   margin: 1rem;
 }
+
+a, img, .pics_in_a_row,.pic_in_a_row {
+  height: 100% !important;
+}
