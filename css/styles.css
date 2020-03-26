@@ -80,10 +80,28 @@ hr {
   height: 0;
   overflow: visible;
 }
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
 
+.pics_in_a_row {
+  display: flex;
+}
+
+.img1 { flex: 1.3344; }
+.img2 { flex: 1.3345; }
+.img3 { flex: 0.7505; }
+.img4 { flex: 1.5023; }
+.img5 { flex: 0.75; }
 .couples{
   border-radius:100%;
- 
+   font-size: 20px;
+   height: 550px;
+   padding:20px;
+   font-family: 'Source Sans Pro';
+   text-align:left;
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -484,6 +502,9 @@ mark,
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.pic_in_a_row{
+  display:flex;
 }
 
 .img-thumbnail {
